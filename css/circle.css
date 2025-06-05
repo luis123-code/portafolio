@@ -1,0 +1,203 @@
+.conteiner__habilidades__lenguajes{
+
+  width: 100%;
+}
+.conteiner__habilidades__lenguajes{
+  text-align: center;
+}
+
+
+.conteiner__lenguaje{
+    width: 100%;
+    margin-top: 100px;
+
+}
+/* @media(max-width:375px){
+  .conteiner__lenguaje{width: 70%; }
+} */
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.lenguaje__edit{
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+
+}
+
+
+
+.title__lenguaje{
+    text-align: center;
+    margin: 15px;
+}
+
+.circle-wrap{
+width: 100%;
+height: 100%;
+padding-top: 15px;
+padding: 0 115px;
+z-index: 1;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4,
+.circle-wrap .circle .fill-5,
+.circle-wrap .circle .fill-6,
+.circle-wrap .circle .fill-7,
+.circle-wrap .circle .fill-8,
+.circle-wrap .circle .fill-9 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+z-index: 1;
+
+}
+
+.circle-wrap .inside-circle {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: #212020;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: white;
+  position: absolute;
+  z-index:2;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* color animation */
+
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(221deg , #f35151 , rgb(208, 37, 100) );
+}
+
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(17deg , rgb(23 174 227) , rgb(204 213 233) );
+}
+
+
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(245, 242, 34) , rgb(204 213 233) );
+}
+
+.mask .fill-4 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(34 113 245) , rgb(204 213 233) );
+}
+
+.mask .fill-5 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(198, 23, 78) , rgb(204 213 233) );
+}
+
+.mask .fill-6 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(97, 145, 229) , rgb(204 213 233) );
+}
+
+.mask .fill-7{
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(34 113 245) , rgb(204 213 233) );
+}
+.mask .fill-8 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(160, 185, 227) , rgb(204 213 233) );
+}
+.mask .fill-9{
+  clip: rect(0px, 75px, 150px, 0px);
+  background: linear-gradient(105deg , rgb(27, 104, 238) , rgb(161, 244, 73) );
+}
+
+
+/*animaciones*/
+.mask.full-1,
+.circle .fill-1  {
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-2 {
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-3 {
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-4 {
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-5{
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(130deg);
+}
+
+.mask.full-1,
+.circle .fill-6{
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-7{
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(130deg);
+}
+
+.mask.full-1,
+.circle .fill-8{
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(153deg);
+}
+
+.mask.full-1,
+.circle .fill-9{
+  animation: fill-1 ease-out 10s infinite;
+  transform: rotate(130deg);
+}
+
+
+
+
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(153deg);
+  }
+}

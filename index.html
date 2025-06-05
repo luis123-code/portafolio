@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .ml11 {
+            font-weight: 700;
+            font-size: 3.5em;
+        }
+
+        .ml11 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.1em;
+            padding-right: 0.05em;
+            padding-bottom: 0.15em;
+        }
+
+
+
+
+        .ml11 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 20px;
+            max-width: 1370px;
+            margin: 0 auto;
+
+        }
+
+        .contenedor_imagenes {
+            display: flex;
+            gap: 5px;
+            height: 372px;
+            width: 50%;
+            margin-bottom: 31px;
+        }
+
+        .contenedor_imagenes>img {
+            width: 0px;
+            object-fit: cover;
+            flex-grow: 1;
+            transition: .5s ease;
+            border-radius: 1em;
+            filter: opacity(90%);
+            position: relative;
+        }
+
+        .contenedor_imagenes>img:hover {
+            width: 50%;
+            filter: opacity(100%);
+        }
+
+        .contenedor_imagenes>img:nth-child(1) {
+            top: 50px;
+        }
+
+        .contenedor_imagenes>img:nth-child(3) {
+            top: 50px;
+        }
+
+
+        .hero .info {
+            flex: 1;
+            min-width: 50%;
+            padding: 20px;
+        }
+
+        .hero .info h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero .info p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .button-trt button {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .hero .button-trt a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Estilos para el ícono WhatsApp */
+        #whatsapp-icon {
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            position: relative;
+            top: 0px;
+        }
+
+        /* Clase para mostrar el ícono con animación */
+        #whatsapp-icon.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #whatsapp-icon:hover {
+            background-color: #128C4A;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background-color: #f8f9fa">
+        <div class="hero">
+            <div class="info">
+
+                <h1 class="ml11">
+                    <span class="text-wrapper">
+                        <span class="letters"></span>
+                        <span class="linea"></span>
+                    </span>
+                </h1>
+
+
+
+                <p class="lead">Desarrollador Web | Freelancer | Autodidacta</p>
+
+                <div class="button-trt">
+                    <button><a href="https://github.com/luis123-code" target="_blank">Entra a mi
+                            repositorio</a></button>
+                </div>
+            </div>
+            <div class="contenedor_imagenes">
+                <img src="./imagenes/presentacion/pexels-christina-morillo-1181325 (1).jpg" alt="">
+                <img src="./imagenes/presentacion/pexels-christina-morillo-1181467 (1).jpg" alt="">
+                <img src="./imagenes/presentacion/pexels-hitesh-choudhary-1261427 (1).jpg" alt="">
+                <img src="./imagenes/presentacion/pexels-sora-shimazaki-5926382 (1).jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre mí</h2>
+            <p class="text-center">Soy un desarrollador web en formación, apasionado por el aprendizaje constante y el
+                desarrollo de soluciones creativas. Tengo experiencia con tecnologías como HTML, CSS, JavaScript, Vue,
+                Nuxt , Axios , Vuex , SASS.</p>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/ddedghgb6/image/upload/v1749050557/Captura_de_pantalla_2025-06-04_101859_qxphie.png"
+                            class="card-img-top" alt="Store Technology">
+                        <div class="card-body">
+                            <h5 class="card-title">Store Technology</h5>
+                            <p class="card-text">
+                                Tienda online de productos tecnológicos. Proyecto responsive con navegación por
+                                secciones.
+                                Tecnologías usadas: HTML, CSS, JavaScript, Bootstrap.
+                            </p>
+                            <a href="https://store-technology.vercel.app/index.html" target="_blank"
+                                class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/ddedghgb6/image/upload/v1749050772/Captura_de_pantalla_2025-06-04_102418_oq1hfe.png"
+                            class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema de Gestión Personal</h5>
+                            <p class="card-text">
+                                Plataforma web todo-en-uno para la organización personal. Incluye calculadora, registro
+                                y control de gastos, aplicación de cupones de descuento, administración de citas y más.
+                                El proyecto está desarrollado con HTML, CSS, JavaScript y Bootstrap.
+                                Emplea programación orientada a objetos y utiliza <code>localStorage</code> para
+                                persistencia de datos, manteniendo la funcionalidad de los objetos mediante prototipos
+                                al recuperar la información.
+                            </p>
+                            <a href="https://javascript-project-snowy.vercel.app/" target="_blank"
+                                class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/ddedghgb6/image/upload/v1749050997/Captura_de_pantalla_2025-06-04_102748_yichpo.png"
+                            class="card-img-top" alt="Store Food">
+                        <div class="card-body">
+                            <h5 class="card-title">Store Food</h5>
+                            <p class="card-text">
+                                Aplicación web para una tienda de comida. Los usuarios pueden explorar productos y
+                                realizar pedidos fácilmente.
+                                Diseño responsive y atractivo gracias a Bootstrap.
+                                Tecnologías usadas: HTML, CSS, JavaScript, Bootstrap.
+                            </p>
+                            <a href="https://store-food-sigma.vercel.app/index.html" target="_blank"
+                                class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/ddedghgb6/image/upload/v1749051265/Captura_de_pantalla_2025-06-04_103251_d1nd7e.png"
+                            class="card-img-top" alt="Proyecto Tres">
+                        <div class="card-body">
+                            <h5 class="card-title">MiAppExchange</h5>
+                            <p class="card-text">
+                                Aplicación web desarrollada con Vue.js, Vue Router . Incluye integración con APIs para
+                                manejo de datos dinámicos y un diseño moderno y responsivo.
+                                Tecnologías usadas: Vue.js, Vue Router, JavaScript.
+                            </p>
+                            <a href="https://mi-app-exchange.vercel.app/" target="_blank" class="btn btn-primary">Ver
+                                más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/ddedghgb6/image/upload/v1749053128/Captura_de_pantalla_2025-06-04_110200_xidzlf.png"
+                            class="card-img-top" alt="Marketplace Tienda">
+                        <div class="card-body">
+                            <h5 class="card-title">Panel Administrador YARD Sale</h5>
+                            <p class="card-text">
+                                Plataforma de administración de un marketplace desarrollada con Nuxt.js para la interfaz
+                                y MySQL como base de datos.<br>
+                                Permite a los administradores gestionar productos, usuarios y ventas mediante un sistema
+                                completo de CRUD (Crear, Leer, Actualizar, Eliminar).<br>
+                                Incluye visualización de métricas clave con gráficos interactivos como ventas mensuales,
+                                tráfico del sitio y distribución de productos.<br><br>
+                                <strong>Tecnologías usadas:</strong> Nuxt.js, Vue.js, Vuex, Vuetify, Axios, REST API,
+                                MySQL.
+                            </p>
+                            <a href="https://marketplace-tienda-zdgi.vercel.app/admin/redirigir" target="_blank"
+                                class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://res.cloudinary.com/dbejvtl9p/image/upload/v1749054033/ccvg1coiz56tmeqzrgwh.png"
+                            class="card-img-top" alt="Dashboard YARD Sale">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketplace Tienda
+                            </h5>
+                            <p class="card-text">
+                                Plataforma de comercio electrónico desarrollada con Nuxt.js para el frontend y MySQL
+                                como base de datos.
+                                Permite a los usuarios explorar productos, gestionar su carrito y realizar compras de
+                                forma segura.<br><br>
+                                <strong>Tecnologías usadas:</strong> Nuxt.js, Vue.js, Vuex, REST API, MySQL, Vuetify,
+                                Axios.
+                            </p>
+                            <a href="https://marketplace-tienda-zdgi.vercel.app/" target="_blank"
+                                class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificados -->
+    <section id="certificados" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Certificados</h2>
+            <p class="text-center text-muted mb-5">Estos son algunos de los certificados que he obtenido en mi camino
+                como desarrollador web.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="Certificado HTML"
+                            style="background:#fff; padding:1rem; height:200px; object-fit:contain;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">HTML y CSS Básico a intermedio</h5>
+                            <p class="card-text">Certificado emitido por Platzi. Fundamentos de estructura, responsive
+                                design y estilos intermedios.</p>
+                            <a href="/pages/certificadoHtml.html" class="btn btn-outline-primary btn-sm"
+                                target="_blank">Ver certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                            alt="Certificado JavaScript"
+                            style="background:#fff; padding:1rem; height:200px; object-fit:contain;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">JavaScript Básico a intermedio</h5>
+                            <p class="card-text">Cursos realizado en Platzi. Manejo de lógica, asincronía, eventos, DOM
+                                y
+                                promesas.</p>
+                            <a href="/pages/certifcadoJS.html" class="btn btn-outline-primary btn-sm"
+                                target="_blank">Ver certificado</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-0 h-100">
+                        <img src="https://cdn.worldvectorlogo.com/logos/vue-9.svg" alt="Certificado Vue"
+                            style="background:#fff; padding:1rem; height:200px; object-fit:contain;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Vue y Nuxt Básico a intermedio</h5>
+                            <p class="card-text">Formación en desarrollo de interfaces SPA con Vue y SSR con Nuxt.
+                                Cursos
+                                en Platzi.</p>
+                            <a href="/pages/certificadoVue.html" class="btn btn-outline-primary btn-sm"
+                                target="_blank">Ver certificado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Tu nombre" name="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Tu correo" name="email" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" rows="4" placeholder="Tu mensaje" name="información"
+                        required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div style="    display: flex
+;
+    justify-content: end;
+    margin: 11px;">
+        <a href="https://wa.me/919581705" target="_blank" id="whatsapp-icon" aria-label="Contacto WhatsApp">
+            <i class="fab fa-whatsapp fa-3x" style="    position: relative;
+    top: -4px;
+"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Luis Ramirez Zevallos - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/config.js"></script>
+
+
+    <script>
+        let form = document.querySelector('form');
+        document.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let datosEncapsulado = new FormData(form);
+            let url = supaBaseUrl;
+            let apikey = supaBaseApiKey;
+            console.log('Datos del formulario:', Object.fromEntries(datosEncapsulado.entries()), url, apikey);
+            let informacion = Object.values(Object.fromEntries(datosEncapsulado.entries()))
+            console.log('informacion:', informacion.length);
+            if (informacion.length === 3) {
+            console.log('informacion del formulario:', informacion);
+
+                let enviar = {
+                    nombre: informacion[0],
+                    correo: informacion[1],
+                    mensaje : informacion[2]
+                }
+                fetch(url + '/rest/v1/portafolio', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'apikey': apikey,
+                        'authorization': `Bearer ${apikey}`,
+                    },
+                    mode: 'cors',
+                    body: JSON.stringify(enviar)
+                }).then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error en la solicitud');
+                    }
+                    alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
+                }).then(data => {
+                    console.log('Formulario enviado con éxito:', data);
+                    form.reset(); // Limpiar el formulario después de enviar
+                }).catch(error => {
+                    console.error('Error al enviar el formulario:', error);
+                });
+
+               
+            }
+        });
+
+
+
+
+        setTimeout(() => {
+
+            const texts = [
+                "¡Hola!",
+                "Soy Luis Zevallos",
+                "Bienvenido a mi Portafolio"
+            ];
+
+            const lettersSpan = document.querySelector('.ml11 .letters');
+            const line = document.querySelector('.ml11 .line1');
+
+            function wrapLetters(text) {
+                return text.replace(/([^\x00-\x80]|\w)/g, "<span class='letter' style='opacity:0;'>$&</span>");
+            }
+
+            let index = 0;
+
+            function animateText() {
+                if (index >= texts.length) return;
+
+                // Poner las letras con opacity 0 desde el inicio
+                lettersSpan.innerHTML = wrapLetters(texts[index]);
+
+                const letters = lettersSpan.querySelectorAll('.letter');
+
+                // Ocultar el contenedor de letras para evitar parpadeo antes de animar
+                lettersSpan.style.opacity = 1;
+
+                const textWidth = lettersSpan.getBoundingClientRect().width;
+                anime({
+                    targets: line,
+                    translateX: [0, textWidth + 10],
+                    duration: 1000,
+                    easing: 'easeOutExpo'
+                });
+
+                const timeline = anime.timeline({
+                    easing: 'easeOutExpo'
+                });
+
+                timeline.add({
+                    targets: letters,
+                    opacity: [0, 1],
+                    duration: 1200,
+                    delay: (el, i) => i * 150
+                });
+
+                if (index < texts.length - 1) {
+                    timeline.add({
+                        targets: letters,
+                        opacity: [1, 0],
+                        duration: 600,
+                        delay: 1000,
+                        complete: () => {
+                            index++;
+                            animateText();
+                        }
+                    });
+                }
+            }
+
+            anime.timeline()
+                .add({
+                    targets: '.ml11 .line',
+                    scaleY: [0, 1],
+                    opacity: [0.3, 1],
+                    duration: 1000,
+                    easing: 'easeOutExpo',
+                    complete: animateText
+                });
+
+        }, 1000); // Espera 1 segundo después de cargar la página
+
+    </script>
+
+
+
+
+</body>
+
+</html>

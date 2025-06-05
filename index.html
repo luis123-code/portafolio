@@ -187,9 +187,18 @@
     <section id="sobre-mi" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Sobre mí</h2>
-            <p class="text-center">Soy un desarrollador web en formación, apasionado por el aprendizaje constante y el
-                desarrollo de soluciones creativas. Tengo experiencia con tecnologías como HTML, CSS, JavaScript, Vue,
-                Nuxt , Axios , Vuex , SASS.</p>
+            <p class="text-center">
+                Soy un desarrollador web en formación, apasionado por el aprendizaje continuo y la creación de
+                soluciones creativas.
+                Tengo experiencia trabajando con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>,
+                <strong>Vue</strong>, <strong>Nuxt</strong>, <strong>Axios</strong>, <strong>Vuex</strong> y
+                <strong>SASS</strong>.
+            </p>
+
+            <div class="text-center mt-3">
+                <a href="ruta-a-tu-cv.pdf" class="btn btn-primary" download>Descargar mi CV</a>
+            </div>
         </div>
     </section>
 
@@ -418,12 +427,12 @@
             let informacion = Object.values(Object.fromEntries(datosEncapsulado.entries()))
             console.log('informacion:', informacion.length);
             if (informacion.length === 3) {
-            console.log('informacion del formulario:', informacion);
+                console.log('informacion del formulario:', informacion);
 
                 let enviar = {
                     nombre: informacion[0],
                     correo: informacion[1],
-                    mensaje : informacion[2]
+                    mensaje: informacion[2]
                 }
                 fetch(url + '/rest/v1/portafolio', {
                     method: 'POST',
@@ -446,7 +455,7 @@
                     console.error('Error al enviar el formulario:', error);
                 });
 
-               
+
             }
         });
 
